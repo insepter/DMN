@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f81512042a40dd4bbd72b581d44203d, type: 3}
+  m_Name: SkillData
+  m_EditorClassIdentifier: 
+  countUpgrade: 339
+  detailSkills:
+  - refId: 0
+    eUpgrade: 0
+    presentLv: 0
+    icon: {fileID: 2800000, guid: 7ae10be47204fd043912355a906526b6, type: 3}
+  - refId: 1
+    eUpgrade: 1
+    presentLv: 0
+    icon: {fileID: 2800000, guid: c7ff3e299db977b4db632897f550162a, type: 3}
+  - refId: 2
+    eUpgrade: 2
+    presentLv: 0
+    icon: {fileID: 2800000, guid: eb3d088aecc2ad34aa79276f57488e9c, type: 3}
+  - refId: 3
+    eUpgrade: 3
+    presentLv: 0
+    icon: {fileID: 2800000, guid: de0a8d04c789fce4089440406724b269, type: 3}
+  - refId: 4
+    eUpgrade: 4
+    presentLv: 0
+    icon: {fileID: 2800000, guid: 34c8f2d22ec0ecc4198a948c353f458a, type: 3}
+  - refId: 5
+    eUpgrade: 5
+    presentLv: 0
+    icon: {fileID: 2800000, guid: d4a6f312567e29b4a827d7e115610fd4, type: 3}
+  - refId: 6
+    eUpgrade: 6
+    presentLv: 0
+    icon: {fileID: 2800000, guid: bb89d573b39008840bdbd0efd8328793, type: 3}
+  - refId: 7
+    eUpgrade: 7
+    presentLv: 0
+    icon: {fileID: 2800000, guid: a79c28f043a6c974a896759db05914e0, type: 3}
+  - refId: 8
+    eUpgrade: 8
+    presentLv: 0
+    icon: {fileID: 2800000, guid: 1f88af1fcb7e2a546af6540b70d345ac, type: 3}
+  - refId: 9
+    eUpgrade: 9
+    presentLv: 0
+    icon: {fileID: 2800000, guid: d89a9c7c3ea13354db932bbc13dfb0f7, type: 3}
+  - refId: 10
+    eUpgrade: 10
+    presentLv: 0
+    icon: {fileID: 2800000, guid: 459858206b9b87744b84fcb6a98733dc, type: 3}
+  - refId: 11
+    eUpgrade: 11
+    presentLv: 0
+    icon: {fileID: 2800000, guid: d9eb9336f02187d409faf62cadc0d2e0, type: 3}

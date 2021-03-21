@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c5d99d81cbd344aa5dacced16076ec, type: 3}
+  m_Name: IAPData
+  m_EditorClassIdentifier: 
+  iAPDetails:
+  - id: Test01
+    isBought: 0
+    currencyReward:
+      eCurrency: 0
+      unit: 100
+    productType: 0
+    presentCount: 0
+    maxCount: 5
+  - id: Test02
+    isBought: 0
+    currencyReward:
+      eCurrency: 0
+      unit: 200
+    productType: 2
+    presentCount: 0
+    maxCount: 0
+  - id: Test03
+    isBought: 0
+    currencyReward:
+      eCurrency: 1
+      unit: 300
+    productType: 2
+    presentCount: 0
+    maxCount: 0
+  - id: Test04
+    isBought: 0
+    currencyReward:
+      eCurrency: 1
+      unit: 300
+    productType: 2
+    presentCount: 0
+    maxCount: 0

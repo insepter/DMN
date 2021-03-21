@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee0651d1fa8095f45a10c75fd538b8c7, type: 3}
+  m_Name: ShopItemData
+  m_EditorClassIdentifier: 
+  detailShopItems:
+  - refId: 0
+    icon: {fileID: 2800000, guid: b6237b4c7995dd246babf1db1d4223a3, type: 3}
+    cost: 0
+    isUnlock: 1
+    isUse: 1
+    speed: 100
+    speedTurn: 1
+  - refId: 1
+    icon: {fileID: 2800000, guid: 5ce59c007f5058a4e8d66f2490212715, type: 3}
+    cost: 1000
+    isUnlock: 0
+    isUse: 0
+    speed: 0
+    speedTurn: 0
+  - refId: 2
+    icon: {fileID: 2800000, guid: a0ed0a475995c5244b4a9a0d989abec6, type: 3}
+    cost: 2000
+    isUnlock: 0
+    isUse: 0
+    speed: 200
+    speedTurn: 2
+  - refId: 3
+    icon: {fileID: 2800000, guid: edaf23dabd2e34944886f1c0e04039be, type: 3}
+    cost: 3000
+    isUnlock: 0
+    isUse: 0
+    speed: 300
+    speedTurn: 3
+  - refId: 4
+    icon: {fileID: 2800000, guid: 5c16a6e7d20217040bb2b38f4bffeddf, type: 3}
+    cost: 4000
+    isUnlock: 0
+    isUse: 0
+    speed: 400
+    speedTurn: 4
+  - refId: 5
+    icon: {fileID: 2800000, guid: 665bb021c528f9f419858e636698cc86, type: 3}
+    cost: 5000
+    isUnlock: 0
+    isUse: 0
+    speed: 500
+    speedTurn: 5
+  - refId: 6
+    icon: {fileID: 2800000, guid: f336b74fecc05c74391ee3e2efdca51e, type: 3}
+    cost: 6000
+    isUnlock: 0
+    isUse: 0
+    speed: 600
+    speedTurn: 6
+  - refId: 7
+    icon: {fileID: 2800000, guid: 53bfd49bc6841c246b75901d3022d54e, type: 3}
+    cost: 7000
+    isUnlock: 0
+    isUse: 0
+    speed: 700
+    speedTurn: 7
+  - refId: 8
+    icon: {fileID: 2800000, guid: 5bd71e9a0259b6e4c8fc3f38960a6caf, type: 3}
+    cost: 8000
+    isUnlock: 0
+    isUse: 0
+    speed: 800
+    speedTurn: 8
+  - refId: 9
+    icon: {fileID: 2800000, guid: 6bb069b202dad0d4ab36aed2d868b758, type: 3}
+    cost: 9000
+    isUnlock: 0
+    isUse: 0
+    speed: 900
+    speedTurn: 9
