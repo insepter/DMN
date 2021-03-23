@@ -8,14 +8,14 @@
     public class IAPData : ScriptableObject
     {
         public IAPDetail[] iAPDetails;
-        public IAPDetail GetIAPDetail(string id) => iAPDetails.Where(item => item.id.Equals(id)).First();
+        public IAPDetail GetIAPDetail(string id) => iAPDetails.First(item => item.id.Equals(id));
 
-        public bool SetIAPDetail(string id, ProductType productType)
+        public IAPDetail SetIAPDetail(string id)
         {
             IAPDetail _iAPDetail = iAPDetails.Where(item => item.id.Equals(id)).First();
-            if (productType.Equals(ProductType.NonConsumable))
+            if (_iAPDetail.productType.Equals(ProductType.NonConsumable))
                 _iAPDetail.isBought = true;
-            else if (productType.Equals(ProductType.Consumable))
+            else if (_iAPDetail.productType.Equals(ProductType.Consumable))
             {
                 if (!_iAPDetail.isBought)
                     _iAPDetail.isBought = ++_iAPDetail.presentCount >= _iAPDetail.maxCount;
@@ -24,13 +24,13 @@
             if (Currency.CurrencyController.instance)
                 Currency.CurrencyController.instance.SetCurrency(_iAPDetail.currencyReward.eCurrency, _iAPDetail.currencyReward.unit);
 
-            return !_iAPDetail.isBought;
+            return _iAPDetail;
         }
-        public bool SetIAPDetail(IAPDetail iAPDetail, ProductType productType)
+        public IAPDetail SetIAPDetail(IAPDetail iAPDetail)
         {
-            if (productType.Equals(ProductType.NonConsumable))
+            if (iAPDetail.productType.Equals(ProductType.NonConsumable))
                 iAPDetail.isBought = true;
-            else if (productType.Equals(ProductType.Consumable))
+            else if (iAPDetail.productType.Equals(ProductType.Consumable))
             {
                 if (!iAPDetail.isBought)
                     iAPDetail.isBought = ++iAPDetail.presentCount > iAPDetail.maxCount;
@@ -39,7 +39,7 @@
             if (Currency.CurrencyController.instance)
                 Currency.CurrencyController.instance.SetCurrency(iAPDetail.currencyReward.eCurrency, iAPDetail.currencyReward.unit);
 
-            return !iAPDetail.isBought;
+            return iAPDetail;
         }
     }
 }

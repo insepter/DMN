@@ -1,14 +1,13 @@
 ﻿namespace Insepter.IAP
 {
     using UnityEngine;
-    using UnityEngine.Events;
     using UnityEngine.Purchasing;
     using UnityEngine.UI;
 
     public abstract class IAPBaseProductUI : MonoBehaviour
     {
         public string id, namepurchaseBtn;
-        public Text titleTxt, descriptionTxt, priceTxt;
+        public Text titleTxt, descriptionTxt, priceTxt, countGetRewardTxt;
         public Button purchaseBtn;
         public ProductType productType;
         public EButtonPurchase eButtonPurchase;
@@ -45,10 +44,16 @@
 
             return this;
         }
-        void PurchaseComple(bool isActive)
+        public void SetCountGetReward(string result)
         {
-            Debug.Log($"Complete: {id} -- productType: {productType} -- Active: {isActive}");
-            purchaseBtn.interactable = isActive;
+            if (countGetRewardTxt)
+                countGetRewardTxt.text = result;
+        }
+        void PurchaseComple(IAPDetail iAPDetail)
+        {
+            Debug.Log($"Complete: {id} -- productType: {productType} -- Active: {iAPDetail.isBought}");
+            SetCountGetReward($"{iAPDetail.presentCount}/{iAPDetail.maxCount}");
+            purchaseBtn.interactable = !iAPDetail.isBought;
         }
     }
 }

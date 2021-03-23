@@ -50,12 +50,19 @@
             _IextensionProvider = extensions;
 
             if (iAPBaseProductUIs.Count <= 0)
-                System.Array.ForEach(controller.products.all, item => iAPBaseProductUIs.Add(Instantiate(prefabIAPProduct, spawPointIAPProduct).SetProduct(item, PurchaseButtonClick)));
+            {
+                for (int i = 0; i < controller.products.all.Length; i++)
+                {
+                    IAPBaseProductUI _iAPBaseProductUI = Instantiate(prefabIAPProduct, spawPointIAPProduct).SetProduct(controller.products.all[i], PurchaseButtonClick);
+                    _iAPBaseProductUI.SetCountGetReward($"{iAPData.iAPDetails[i].presentCount}/{iAPData.iAPDetails[i].maxCount}");
+                    iAPBaseProductUIs.Add(_iAPBaseProductUI);
+                }
+            }
             else
             {
                 for (int i = 0; i < controller.products.all.Length; i++)
                 {
-                    iAPBaseProductUIs[i].SetProduct(controller.products.all[i], PurchaseButtonClick);
+                    iAPBaseProductUIs[i].SetProduct(controller.products.all[i], PurchaseButtonClick).SetCountGetReward($"{iAPData.iAPDetails[i].presentCount}/{iAPData.iAPDetails[i].maxCount}");
                 }
             }
 

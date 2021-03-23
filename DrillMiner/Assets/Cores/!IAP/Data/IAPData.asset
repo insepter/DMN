@@ -18,9 +18,9 @@ MonoBehaviour:
     currencyReward:
       eCurrency: 0
       unit: 100
-    productType: 0
+    productType: 2
     presentCount: 0
-    maxCount: 5
+    maxCount: 0
   - id: Test02
     isBought: 0
     currencyReward:
